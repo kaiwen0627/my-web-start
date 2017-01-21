@@ -1,0 +1,36 @@
+#mi-video ul li,
+.bottom-info .container ul li,
+.wntj .mi-zhoubian-wrap ul li,
+.mi-main-basetool .main-base-page ul li,
+.mi-zhineng-goods ul li,
+.mi-product-goods .mi-product-wrap ul li,
+.home-hero-sub .container img,
+.mi-main-basetool .no-wrap img
+{
+    /*position: relative;*/
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+#mi-video ul li:hover,
+.bottom-info .container ul li:hover,
+.wntj .mi-zhoubian-wrap ul li:hover,
+.mi-main-basetool .main-base-page ul li:hover,
+.mi-zhineng-goods ul li:hover,
+.mi-product-goods .mi-product-wrap ul li:hover,
+.home-hero-sub .container  img:hover,
+.mi-main-basetool .no-wrap img:hover
+
+{
+    -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
