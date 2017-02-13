@@ -2,7 +2,7 @@
 html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
 fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
 ul, ol { list-style:none; }
-input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+input { padding-top:0; padding-bottom:0; font-family: "Microsoft YaHei","SimSun","宋体";}
 select, input { vertical-align:middle; }
 select, input, textarea { font-size:12px; margin:0; }
 textarea { resize:none; }
@@ -29,11 +29,11 @@ s,i,em{font-style:normal;text-decoration:none;}
 
 @font-face {
     font-family: 'iconfont';
-    src: url('../icon/iconfont.eot');
-    src: url('../icon/iconfont.eot?#iefix') format('embedded-opentype'),
-    url('../icon/iconfont.woff') format('woff'),
-    url('../icon/iconfont.ttf') format('truetype'),
-    url('../icon/iconfont.svg#iconfont') format('svg');
+    src: url('icon/iconfont.eot');
+    src: url('icon/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('icon/iconfont.woff') format('woff'),
+    url('icon/iconfont.ttf') format('truetype'),
+    url('icon/iconfont.svg#iconfont') format('svg');
 }
 .iconfont{
     font-family:"iconfont" !important;
@@ -72,9 +72,9 @@ s,i,em{font-style:normal;text-decoration:none;}
 html,body{
     width: 100%;
 }
-body{
-    height: 3000px;
-}
+/*body{*/
+    /*height: 3000px;*/
+/*}*/
 
 .header {
     width: 100%;

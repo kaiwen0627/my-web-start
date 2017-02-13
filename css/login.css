@@ -1,0 +1,211 @@
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('login-icon/iconfont.eot');
+    src: url('login-icon/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('login-icon/iconfont.woff') format('woff'),
+    url('login-icon/iconfont.ttf') format('truetype'),
+    url('login-icon/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.wrap{
+    width:1131px;
+    margin:0 auto;
+}
+.header{
+    height: 98px;
+
+    /*background-color: #900;*/
+    background: url('../images/mistore_logo.png') no-repeat left center;
+}
+.context{
+    height: 588px;
+    width: 100%;
+    background-color: #14212b;
+}
+.context .wrap{
+    height: 100%;
+
+    background: url("../images/login-banner.jpg") no-repeat;
+}
+
+.login-form{
+    width: 400px;
+    height: 524px;
+    background-color: #fff;
+    float: right;
+    margin-top:32px;
+}
+
+.login-container{
+    width: 338px;
+    margin:0 auto;
+
+}
+.login-container ul{
+    width: 338px;
+    height: 30px;
+    margin:30px 0 33px;
+}
+.login-container ul li{
+    width: 168px;
+    height: 30px;
+    float: left;
+    font-size: 24px;
+    text-align: center;
+    line-height:30px;
+}
+.login-container ul li.on a{
+    color: #f66309;
+}
+
+.login-container ul li:first-child{
+   border-right: 2px solid #e0e0e0;
+}
+.login-container form input{
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height:50px;
+    outline:1px solid #e0e0e0;
+    font-size: 14px;
+    padding-left:14px;
+    width: 324px;
+}
+.login-container form input.user{
+    margin-bottom:14px;
+}
+.login-container form input.password{
+    margin-bottom:24px;
+}
+.login-container form input.submit{
+    margin-bottom:21px;
+    font-size: 18px;
+    background-color: #f56600;
+    color: #fff;
+    width: 100%;
+}
+
+.login-container p{
+    text-align: center;
+    height: 16px;
+    line-height:16px;
+}
+.login-container p i{
+    display: inline-block;
+    margin:1px 10px 0;
+    width: 1px;
+    height: 13px;
+    background-color: #999;
+}
+.login-container p a{
+    color: #999;
+}
+.login-container p a:hover{
+    color: #f66309;
+}
+.login-other{
+    height: 80px;
+    width: 100%;
+    border-top:1px solid #e0e0e0;
+    /*background-color: #ff282a;*/
+    margin-top:125px;
+    text-align: center;
+    vertical-align: middle;
+    line-height:80px;
+    position: relative;
+}
+
+.login-other i.title{
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    width: 86px;
+    font-size: 14px;
+    color: #999;
+    position: absolute;
+    background-color: #fff;
+    left:50%;
+    margin-left:-43px;
+    top:-10px;
+}
+
+.login-other .qq,
+.login-other .zfb,
+.login-other .wb,
+.login-other .wx{
+    font-size: 30px;
+}
+.login-other a{
+    margin-right:38px;
+    /*display: inline-block;*/
+    /*width: 30px;*/
+    /*height: 30px;*/
+}
+.login-other .qq-a{
+    margin-left:52px;
+}
+
+
+.login-other a:hover{
+color: transparent;
+}
+.login-other .qq{
+    /*margin-left:52px;*/
+}
+.login-other .qq:hover{
+    color: #355eff;
+}
+.login-other .zfb:hover{
+    color: #355eff;
+}
+.login-other .wx:hover{
+    color: #20ff5c;
+}
+.login-other .wb:hover{
+    color: #ff282a;
+}
+
+
+.tab{
+    display: none;
+}
+.active{
+    display: block;
+}
+#tab2 p{
+    height: 20px;
+}
+#tab2 p b{
+    font-style: normal;
+    color: #f66309;
+}
+#tab2 img{
+    margin:70px 79px 20px;
+}
+
+.footer{
+    height: 78px;
+    padding-top:70px;
+}
+.footer p{
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+
+}
+.footer i{
+    margin:0 13px 0 10px;
+}
+.footer-info{
+    vertical-align: bottom;
+    margin-top:13px;
+}

@@ -16,24 +16,17 @@ $(function () {
     }).on('mouseleave', function () {
         $(this).children(".head-nav-menu").stop().fadeOut();
 
+
     })
 
-    // $('#nav_item ul').mouseenter(function () {
-    //
-    //         $('#nav_item ul li').on('mouseenter', function () {
-    //             $(this).children(".head-nav-menu").stop(true).slideDown(200);
-    //         });
-    // }).mousemove(function () {
-    //
-    // })
+
+    $('.mi-main-basetool ul li').hover(function () {
+        $(this).children('.review-wrapper').stop().slideDown(200);
+    },function () {
+        $(this).children('.review-wrapper').stop().slideUp(200);
 
 
-
-
-
-
-
-
+    })
 
     //搜索栏
     $('.nav-search').focus(function () {
@@ -58,7 +51,7 @@ $(function () {
 
 
     //big-banner
-    // 右按键
+
 
     $('.bigbanner-ctr-left').hover(function () {
         $(this).css('background-position', '0 0');
@@ -76,21 +69,27 @@ $(function () {
 
 //banner 左右按键
 
+    var time = 0;
     $('.banner-ctrl').click(function () {
-        var i = $(this).index();
-        if (i == 0) {//左按钮
-            m--;
-            if (m < 0) {
-                m = 4;
+        var date=new Date();
+        if(date-time>200){
+            var i = $(this).index();
+           console.log(i);
+            if (i == 1) {//左按钮
+                m--;
+                if (m < 0) {
+                    m = 4;
+                }
+            } else {
+                m++;
+                if (m > 4) {
+                    m = 0;
+                }
             }
-        } else {
-            m++;
-            if (m > 4) {
-                m = 0;
-            }
+            $('.big-pic-list li').eq(m).fadeIn(500).siblings().fadeOut(200);
+            $('.big-dian-list li').eq(m).addClass('active').siblings().removeClass('active');
         }
-        $('.big-pic-list li').eq(m).fadeIn(500).siblings().fadeOut(20);
-        $('.big-dian-list li').eq(m).addClass('active').siblings().removeClass('active');
+        time=new Date();
 
     })
 
@@ -122,8 +121,8 @@ var bannerTimer=null;
     }
 
 
-    $('.big-pic-list').hover(function () {
-        // alert(6)
+    $('#big-banner').hover(function () {
+        m = $('.big-dian-list li.active').index();
         clearInterval(bannerTimer);
     },function () {
        autoBanner();

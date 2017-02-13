@@ -84,11 +84,11 @@ s, i, em {
 
 @font-face {
     font-family: 'iconfont';
-    src: url('../icon/iconfont.eot');
-    src: url('../icon/iconfont.eot?#iefix') format('embedded-opentype'),
-    url('../icon/iconfont.woff') format('woff'),
-    url('../icon/iconfont.ttf') format('truetype'),
-    url('../icon/iconfont.svg#iconfont') format('svg');
+    src: url('icon/iconfont.eot');
+    src: url('icon/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('icon/iconfont.woff') format('woff'),
+    url('icon/iconfont.ttf') format('truetype'),
+    url('icon/iconfont.svg#iconfont') format('svg');
 }
 
 .iconfont {
@@ -106,24 +106,21 @@ s, i, em {
     margin: 0 auto;
 }
 
-/*.fl {*/
-/*float:left*/
-/*}*/
-/*.fr {*/
-/*float:right*/
-/*}*/
-/*.al {*/
-/*text-align:left*/
-/*}*/
-/*.ac {*/
-/*text-align:center*/
-/*}*/
-/*.ar {*/
-/*text-align:right*/
-/*}*/
-/*.hide {*/
-/*display:none*/
-/*}*/
+.top-ad{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    background-color: #d3262a;
+
+}
+.top-ad img{
+    position: absolute;
+    top: 0;
+    left:50%;
+    margin-left:-1280px;
+}
+
 
 /*头部开始*/
 html, body {
@@ -290,7 +287,7 @@ body {
     top: 100px;
     left: 0;
     padding-top: 20px;
-    z-index: 1;
+    z-index:8 ;
 
 }
 
@@ -520,6 +517,7 @@ body {
 .header .nav .nav-search {
     width: 296px;
     height: 50px;
+    line-height:50px;
     box-sizing: border-box;
     font-size: 16px;
     padding: 10px;
@@ -936,6 +934,7 @@ body {
     margin-left: 14px;
     margin-bottom: 13px;
     background-color: #fefefe;
+    position: relative;
 }
 
 .mi-zhineng-goods ul li img {
@@ -1172,6 +1171,53 @@ body {
 
 .mi-main-basetool .main-base-page.active {
     display: block;
+}
+.mi-main-basetool ul li .review-wrapper {
+    height: 76px;
+    width: 234px;
+    background-color: #f66309;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    display: none;
+}
+.mi-main-basetool .main-base-page ul li.new-product::before,
+.mi-main-basetool .main-base-page ul li.dazhe::before
+{
+    content: '新品';
+    display: block;
+    text-align: center;
+    margin:0 auto;
+    width: 64px;
+    font-size: 12px;
+    height: 20px;
+    line-height:20px;
+    color: #fff;
+    background-color: #82c24d;
+}
+.mi-main-basetool .main-base-page ul li.dazhe::before{
+    content: '享8折';
+    background-color: #e53935;
+
+}
+
+.mi-main-basetool ul li .review-wrapper .review{
+    width: 160px;
+    height:30px;
+    margin:0 auto;
+    padding:7px 0;
+    line-height: 19px;
+    font-size: 12px;
+    text-align: left;
+    color: #fff;
+}
+.mi-main-basetool ul li .review-wrapper .author{
+    width: 160px;
+    height:11px;
+    margin:0 auto;
+    font-size: 12px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /*/米 -  搭配*/
