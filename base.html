@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <!--<link rel="stylesheet" href="css/iconfont.css">-->
     <link rel="stylesheet" href="css/base.css">
-
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bace.js"></script>
 </head>
 <body>
 <!--头部开始-->
@@ -24,14 +24,16 @@
                 <a href="">问题反馈</a><span>|</span>
                 <a href="">Select Region</a>
             </div>
-            <div class="minicart">
+            <div class="minicart" id="jq_minicart">
                 <i class="iconfont">&#xe661;</i>
                 购物车（0）
-                <div class="cart-menu"></div>
+                <div class="cart-menu">
+                    你的购物车空空的，去挑点东西吧
+                </div>
             </div>
             <div class="topbar-info">
-                <a href="#">登录</a><span>|</span>
-                <a href="#">注册</a><span>|</span>
+                <a href="login.html">登录</a><span>|</span>
+                <a href="register.html">注册</a><span>|</span>
                 <a href="#">消息通知</a>
             </div>
         </div>
@@ -43,7 +45,7 @@
             </div>
             <div class="category">
                 <a href="#" class="link-category">
-                    <img src="images/mkljl.gif" alt="">
+                    <img src="images/cjhb.gif" alt="">
                 </a>
                 <div class="site-category">
                     <ul>
@@ -301,192 +303,203 @@
                     </ul>
                 </div>
             </div>
-            <div class="nav-item">
+            <div class="nav-item" id="nav_item">
                 <ul>
-                    <li><a href="#">小米手机</a></li>
-                    <li><a href="#">红米</a></li>
-                    <li><a href="#">平板 · 笔记本</a></li>
-                    <li><a href="#">电视</a></li>
-                    <li><a href="#">盒子 · 影音</a></li>
-                    <li><a href="#">路由器</a></li>
-                    <li><a href="#">智能硬件</a></li>
+                    <li><a href="#">小米手机</a>
+                        <div class="head-nav-menu xiaomishouji">
+                            <div class="container">
+                                <ul>
+                                    <li><img src="images/xiaomiNOTE2-320-220!320x220.jpg" alt=""><a href="#">小米Note
+                                        2</a>
+                                        <p>2799元起</p>
+                                        <span></span>
+                                    </li>
+
+                                    <li><img src="images/MIX-320-220!320x220.jpg " alt=""><a href="#">小米MIX</a>
+                                        <p>3499元起</p>
+                                        <span></span>
+                                    </li>
+
+                                    <li><img src="images/xiaomi5S-320-220!320x220.jpg" alt=""><a href="#">小米5s</a>
+                                        <p>1899元起</p><span></span></li>
+
+                                    <li><img src="images/5spluse320_220!320x220.jpg" alt=""><a href="#">小米5s Plus</a>
+                                        <p>2299元起</p><span></span></li>
+
+                                    <li><img src="images/mi5!320x220.jpg" alt=""><a href="#">小米手机5</a>
+                                        <p>1599元起</p><span></span></li>
+
+                                    <li><img src="images/maxdingbu!320x220.jpg" alt=""><a href="#">小米max</a>
+                                        <p>1299元起</p></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">红米</a>
+                        <div class="head-nav-menu hongmi">
+                            <div class="container">
+                                <ul>
+                                    <li><img src="images/hongminote4!160x110.jpg" alt=""><a href="#">红米Note 4</a>
+                                        <p>990元</p><span></span></li>
+
+                                    <li><img src="images/hm4320-2202!160x110.jpg " alt=""><a href="#">红米Note</a>
+                                        <p>690元</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">平板 · 笔记本</a>
+                        <div class="head-nav-menu pc-pad">
+                            <div class="container">
+                                <ul>
+                                    <li><img src="images/mipad2-16!160x110.jpg" alt=""><a href="#">小米平板2 16GB</a>
+                                        <p>999起</p><span></span></li>
+
+                                    <li><img src="images/mipad2-64!160x110.jpg " alt=""><a href="#">小米平板2 64GB</a>
+                                        <p>1299元</p> <span></span></li>
+
+                                    <li><img src="images/mipad2-64-win!160x110.jpg" alt=""><a href="#">小米平板2 64GB
+                                        Windows版</a>
+                                        <p>1299元</p><span></span></li>
+
+                                    <li><img src="images/bijiben32012.5!160x110.jpg" alt=""><a href="#">小米笔记本Air
+                                        12.5"</a>
+                                        <p>3499元</p> <span></span></li>
+
+                                    <li><img src="images/bijiben320!160x110.jpg" alt=""><a href="#">小米笔记本Air 13.3"</a>
+                                        <p>4999元</p> </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">电视</a>
+                        <div class="head-nav-menu mi-tv">
+                            <div class="container">
+                                <ul>
+                                    <li><img src="images/101843.png" alt=""><a href="#">小米电视3s 43英寸B</a>
+                                        <p>1799</p> <span></span></li>
+
+                                    <li><img src="images/101848.png" alt=""><a href="#">小米电视3s 48英寸</a>
+                                        <p>2299元</p> <span></span></li>
+
+                                    <li><img src="images/101855xin.png" alt=""><a href="#">小米电视3s 55英寸</a>
+                                        <p>3699元</p><span></span></li>
+
+                                    <li><img src="images/101860xin.png" alt=""><a href="#">小米电视3s 60英寸</a>
+                                        <p>4499元</p><span></span></li>
+
+                                    <li><img src="images/65yingyuan.png" alt=""><a href="#">小米电视3s 65英寸</a>
+                                        <p>5999元</p><span></span></li>
+
+                                    <li><img src="images/101865.png" alt=""><a href="#">查看全部</a>
+                                        <p>小米电视</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">盒子 · 影音</a>
+                        <div class="head-nav-menu mi-box">
+                            <div class="container">
+                                <ul>
+                                    <li><img src="images/mihezi.png " alt=""><a href="#">小米盒子3s</a>
+                                        <p>299</p><span></span></li>
+
+                                    <li><img src="images/mihezi2.png" alt=""><a href="#">小米盒子3c</a>
+                                        <p>199元</p> <span></span></li>
+
+                                    <li><img src="images/hezi3s!160x110.jpg" alt=""><a href="#">小米盒子3 增强版</a>
+                                        <p>399元</p><span></span></li>
+
+                                    <li><img src="images/hezimini.png" alt=""><a href="#">小米盒子mini版</a>
+                                        <p>179元</p> <span></span></li>
+
+                                    <li><img src="images/320x220.png" alt=""><a href="#">小米家庭影院</a>
+                                        <p>1999元</p><span></span></li>
+
+                                    <li><img src="images/putonban!160x110.jpg" alt=""><a href="#">小米家庭影院</a>
+                                        <p>699</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">路由器</a>
+                        <div class="head-nav-menu mi-weblink">
+                            <div class="container">
+                                <ul>
+                                    <li><img src="images/miwifi!160x110.jpg " alt=""><a href="#">全新小米路由器</a>
+                                        <p>699元</p><span></span></li>
+
+                                    <li><img src="images/miwifi-3!160x110.png" alt=""><a href="#">小米路由器 3</a>
+                                        <p>149元</p><span></span></li>
+
+                                    <li><img src="images/luyouqi3c!160x110.jpg" alt=""><a href="#">小米路由器 3C</a>
+                                        <p>99元</p><span></span></li>
+
+                                    <li><img src="images/fdq2!160x110.jpg" alt=""><a href="#">小米WiFi放大器 2</a>
+                                        <p>49元</p></li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">智能硬件</a>
+                        <div class="head-nav-menu mi-zhineng">
+                            <div class="container">
+                                <ul>
+                                    <li><img src="images/scooter!160x110.jpg" alt=""><a href="#">九号平衡车</a>
+                                        <p> 1999元</p><span></span></li>
+
+                                    <li><img src="images/water2!160x110.jpg" alt=""><a href="#">小米净水器</a>
+                                        <p>1299元</p> <span></span></li>
+
+                                    <li><img src="images/dianfanbao!160x110.jpg" alt=""><a href="#">米家压力IH电饭煲</a>
+                                        <p>999元</p> <span></span></li>
+
+                                    <li><img src="images/air2!160x110.jpg" alt=""><a href="#">小米空气净化器 2</a>
+                                        <p>699元</p>  <span></span></li>
+
+                                    <li><img src="images/xiaobai!160x110.jpg" alt=""><a href="#">智能摄像机</a>
+                                        <p>399元</p><span></span></li>
+
+                                    <li><img src="images/zhinengyingjian!160x110.jpg" alt=""><a href="#">查看全部</a>
+                                        <p> 智能硬件</p></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="#">服务</a></li>
                     <li><a href="#">社区</a></li>
                 </ul>
             </div>
             <div class="search">
-                <form action="">
+                <form action="#">
                     <input type="search" class="nav-search">
+                    <span class="txt1"><a href="#">小米MIX</a></span>
+                    <span class="txt2"><a href="#">人工智能电视</a></span>
                     <button class="search-btn iconfont">&#xf004c;</button>
                 </form>
-            </div>
-        </div>
-        <div class="head-nav-menu xiaomishouji">
-            <div class="container">
-                <ul>
-                    <li><img src="images/xiaomiNOTE2-320-220!320x220.jpg" alt=""><a href="#">小米Note 2</a>
-                        <p>2799元起</p></li>
-                    <span></span>
-                    <li><img src="images/MIX-320-220!320x220.jpg " alt=""><a href="#">小米MIX</a>
-                        <p>3499元起</p></li>
-                    <span></span>
-                    <li><img src="images/xiaomi5S-320-220!320x220.jpg" alt=""><a href="#">小米5s</a>
-                        <p>1899元起</p></li>
-                    <span></span>
-                    <li><img src="images/5spluse320_220!320x220.jpg" alt=""><a href="#">小米5s Plus</a>
-                        <p>2299元起</p></li>
-                    <span></span>
-                    <li><img src="images/mi5!320x220.jpg" alt=""><a href="#">小米手机5</a>
-                        <p>1599元起</p></li>
-                    <span></span>
-                    <li><img src="images/maxdingbu!320x220.jpg" alt=""><a href="#">小米max</a>
-                        <p>1299元起</p></li>
-
-                </ul>
-            </div>
-        </div>
-        <div class="head-nav-menu hongmi">
-            <div class="container">
-                <ul>
-                    <li><img src="images/hongminote4!160x110.jpg" alt=""><a href="#">红米Note 4</a>
-                        <p>990元</p></li>
-                    <span></span>
-                    <li><img src="images/hm4320-2202!160x110.jpg " alt=""><a href="#">红米Note</a>
-                        <p>690元</p></li>
-                    <span></span>
-
-
-                </ul>
-            </div>
-        </div>
-        <div class="head-nav-menu pc-pad">
-            <div class="container">
-                <ul>
-                    <li><img src="images/mipad2-16!160x110.jpg" alt=""><a href="#">小米平板2 16GB</a>
-                        <p>999起</p></li>
-                    <span></span>
-                    <li><img src="images/mipad2-64!160x110.jpg " alt=""><a href="#">小米平板2 64GB</a>
-                        <p>1299元</p></li>
-                    <span></span>
-                    <li><img src="images/mipad2-64-win!160x110.jpg" alt=""><a href="#">小米平板2 64GB Windows版</a>
-                        <p>1299元</p></li>
-                    <span></span>
-                    <li><img src="images/bijiben32012.5!160x110.jpg" alt=""><a href="#">小米笔记本Air 12.5"</a>
-                        <p>3499元</p></li>
-                    <span></span>
-                    <li><img src="images/bijiben320!160x110.jpg" alt=""><a href="#">小米笔记本Air 13.3"</a>
-                        <p>4999元</p></li>
-                    <span></span>
-                </ul>
-            </div>
-        </div>
-        <div class="head-nav-menu mi-tv">
-            <div class="container">
-                <ul>
-                    <li><img src="images/101843.png" alt=""><a href="#">小米电视3s 43英寸B</a>
-                        <p>1799</p></li>
-                    <span></span>
-                    <li><img src="images/101848.png" alt=""><a href="#">小米电视3s 48英寸</a>
-                        <p>2299元</p></li>
-                    <span></span>
-                    <li><img src="images/101855xin.png" alt=""><a href="#">小米电视3s 55英寸</a>
-                        <p>3699元</p></li>
-                    <span></span>
-                    <li><img src="images/101860xin.png" alt=""><a href="#">小米电视3s 60英寸</a>
-                        <p>4499元</p></li>
-                    <span></span>
-                    <li><img src="images/65yingyuan.png" alt=""><a href="#">小米电视3s 65英寸</a>
-                        <p>5999元</p></li>
-                    <span></span>
-                    <li><img src="images/101865.png" alt=""><a href="#">查看全部</a>
-                        <p>小米电视</p></li>
-                </ul>
-            </div>
-        </div>
-        <div class="head-nav-menu mi-box">
-            <div class="container">
-                <ul>
-                    <li><img src="images/mihezi.png " alt=""><a href="#">小米盒子3s</a>
-                        <p>299</p></li>
-                    <span></span>
-                    <li><img src="images/mihezi2.png" alt=""><a href="#">小米盒子3c</a>
-                        <p>199元</p></li>
-                    <span></span>
-                    <li><img src="images/hezi3s!160x110.jpg" alt=""><a href="#">小米盒子3 增强版</a>
-                        <p>399元</p></li>
-                    <span></span>
-                    <li><img src="images/hezimini.png" alt=""><a href="#">小米盒子mini版</a>
-                        <p>179元</p></li>
-                    <span></span>
-                    <li><img src="images/320x220.png" alt=""><a href="#">小米家庭影院</a>
-                        <p>1999元</p></li>
-                    <span></span>
-                    <li><img src="images/putonban!160x110.jpg" alt=""><a href="#">小米家庭影院</a>
-                        <p>699</p></li>
-                </ul>
-            </div>
-        </div>
-        <div class="head-nav-menu mi-weblink">
-            <div class="container">
-                <ul>
-                    <li><img src="images/miwifi!160x110.jpg " alt=""><a href="#">全新小米路由器</a>
-                        <p>699元</p></li>
-                    <span></span>
-                    <li><img src="images/miwifi-3!160x110.png" alt=""><a href="#">小米路由器 3</a>
-                        <p>149元</p></li>
-                    <span></span>
-                    <li><img src="images/luyouqi3c!160x110.jpg" alt=""><a href="#">小米路由器 3C</a>
-                        <p>99元</p></li>
-                    <span></span>
-                    <li><img src="images/fdq2!160x110.jpg" alt=""><a href="#">小米WiFi放大器 2</a>
-                        <p>49元</p></li>
-                    <span></span>
-
-                </ul>
-            </div>
-        </div>
-        <div class="head-nav-menu mi-zhineng">
-            <div class="container">
-                <ul>
-                    <li><img src="images/scooter!160x110.jpg" alt=""><a href="#">九号平衡车</a>
-                        <p> 1999元</p></li>
-                    <span></span>
-                    <li><img src="images/water2!160x110.jpg" alt=""><a href="#">小米净水器</a>
-                        <p>1299元</p></li>
-                    <span></span>
-                    <li><img src="images/dianfanbao!160x110.jpg" alt=""><a href="#">米家压力IH电饭煲</a>
-                        <p>999元</p></li>
-                    <span></span>
-                    <li><img src="images/air2!160x110.jpg" alt=""><a href="#">小米空气净化器 2</a>
-                        <p>699元</p></li>
-                    <span></span>
-                    <li><img src="images/xiaobai!160x110.jpg" alt=""><a href="#">智能摄像机</a>
-                        <p>399元</p></li>
-                    <span></span>
-                    <li><img src="images/zhinengyingjian!160x110.jpg" alt=""><a href="#">查看全部</a>
-                        <p> 智能硬件</p></li>
-
-                </ul>
             </div>
         </div>
     </div>
 </div>
 <!--/头部结束-->
-
+<div id="context">
+    <h1>内容</h1>
+</div>
 <!--footer-->
 <div class="footer">
     <div class="container ">
         <div class="footer-top">
             <ul>
                 <li><a href="#"><i class="iconfont">&#xe64d;</i>520余家售后网点</a></li>
-                <span></span>
-                <li><a href="#"><i class="iconfont">&#xe649;</i>满150元包邮</a></li>
-                <span></span>
-                <li><a href="#"><i class="iconfont">&#xe605;</i>15天免费换货</a></li>
-                <span></span>
-                <li><a href="#"><i class="iconfont">&#xe606;</i>7天无理由退货</a></li>
-                <span></span>
-                <li><a href="#"><i class="iconfont">&#xe659;</i>预约维修服务</a></li>
+                <li><a href="#"><i class="iconfont">&#xe649;</i>满150元包邮</a> <span></span></li>
+                <li><a href="#"><i class="iconfont">&#xe605;</i>15天免费换货</a> <span></span></li>
+                <li><a href="#"><i class="iconfont">&#xe606;</i>7天无理由退货</a> <span></span></li>
+                <li><a href="#"><i class="iconfont">&#xe659;</i>预约维修服务</a><span></span></li>
             </ul>
         </div>
         <div class="footer-center clearfix">

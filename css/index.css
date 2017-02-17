@@ -469,8 +469,9 @@ body {
 
 .header .nav .head-nav-menu li {
     height: 169px;
-    width: 160px;
+    width: 184px;
     float: left;
+    position: relative;
 
 }
 
@@ -507,6 +508,9 @@ body {
     height: 100px;
     float: left;
     background-color: #e0e0e0;
+    position: absolute;
+    left: 180px;
+    top: 0;
 }
 
 .header .nav .search {
@@ -993,6 +997,7 @@ body {
 .mi-main-basetool .container {
     height: 670px;
     margin-top: 62px;
+    position: relative;
 }
 
 .mi-main-basetool h3 {
@@ -1009,6 +1014,7 @@ body {
     margin-left: 14px;
     margin-bottom: 13px;
     background-color: #fefefe;
+    position: relative;         /*sy*/
 }
 
 .mi-main-basetool ul li img {
@@ -1151,7 +1157,9 @@ body {
 
 .mi-main-basetool .mi-main-basetool-ctrl {
     float: right;
-
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .mi-main-basetool .mi-main-basetool-ctrl li {
@@ -1187,18 +1195,23 @@ body {
     content: '新品';
     display: block;
     text-align: center;
-    margin:0 auto;
+    /*margin:0 auto;*/
     width: 64px;
     font-size: 12px;
     height: 20px;
     line-height:20px;
     color: #fff;
     background-color: #82c24d;
+    position: absolute;
+    left: 50%;
+    margin-left:-32px;
+    top: 0;
+
 }
 .mi-main-basetool .main-base-page ul li.dazhe::before{
     content: '享8折';
     background-color: #e53935;
-
+    position: absolute;
 }
 
 .mi-main-basetool ul li .review-wrapper .review{

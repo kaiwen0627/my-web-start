@@ -1,4 +1,7 @@
 $(function () {
+$('img').lazyload({effect:'fadeIn'});
+
+
 
 //topbar-cart
     $('#jq_minicart').hover(function () {
@@ -227,23 +230,23 @@ neirong('#yingyong_page','#yingyong_ctrl','.yingyong');
     //     $(this).addClass('on').siblings().removeClass('on');
     // })
 
-    var k = 0;
-    $('.neirong-ctrl').on('click', function () {
-        var m = $('#tushu-ctrl').find('i').length;//得到页面数目
-        var i = $(this).index();
-        if (i == 2) {//左侧按钮
-            if(k!=0){
-                k--;
-            }
-        } else if (i == 3) {//右侧按钮
-            k++;
-            if(k>m-1){
-               k=m-1;
-           }
-        }
-        $(moveID).animate({left: -k * 296}, 500)
-        $('#tushu-ctrl').find('i').eq(k).addClass('on').siblings().removeClass('on');
-    })
+    // var k = 0;
+    // $('.neirong-ctrl').on('click', function () {
+    //     var m = $('#tushu-ctrl').find('i').length;//得到页面数目
+    //     var i = $(this).index();
+    //     if (i == 2) {//左侧按钮
+    //         if(k!=0){
+    //             k--;
+    //         }
+    //     } else if (i == 3) {//右侧按钮
+    //         k++;
+    //         if(k>m-1){
+    //            k=m-1;
+    //        }
+    //     }
+    //     $(moveID).animate({left: -k * 296}, 500)
+    //     $('#tushu-ctrl').find('i').eq(k).addClass('on').siblings().removeClass('on');
+    // })
 
 
     // $('#mi-dapei-ctrl  li').on('mouseenter', function () {
